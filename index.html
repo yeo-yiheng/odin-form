@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <title>Odin Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</header>
+
+<body>
+    <section class="main-section">
+        <div class="image-column">
+            <div class="logo-banner">
+                <img src="./assets/hoot list logo.png" class="logo-icon">
+                <h2 class="logo-name">Moonbirds</h2>
+            </div>
+        </div>
+        <div class="form-column">
+            <div class="pretext-container">
+                <p class="pretext">This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p class="pretext cta">You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-area">
+                <h2 class="cta"><strong>Let's do this!</strong></h2>
+                <form action="#" method="post" id="creation-form">
+                    <div class="form-field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" value="" id="firstname" required>
+                        <p class="name-error error-warning">Fill in your first name!</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" value="" id="lastname" required>
+                        <p class="name-error error-warning">Fill in your last name!</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" value="" id="email" required>
+                        <p class="email-error error-warning">Invalid Email</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="hp">Phone Number</label>
+                        <input type="tel" value="" id="hp" pattern="[0-9]{8}" required>
+                        <p class="number-error error-warning">Invalid Number</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input class="pw-input" type="password" value="" id="password" required>
+                        <p class="password-error error-warning">Passwords do not match!</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input class="pw-input" type="password" value="" id="password-confirm" required>
+                        <p class="password-error error-warning">Passwords do not match!</p>
+                    </div>
+                </form>
+            </div>
+            <div class="registration-container">
+                <button type="submit" form="creation-form" class="create-button">Create Account</button>
+                <div class="login">Already have an account? <span><a href="" class="login-cta"><strong>Log in</strong></a></span></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
